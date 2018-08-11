@@ -31,13 +31,11 @@
     width: 65%;
     background: $colour3;
     height: 100%;
-    //padding: 0 0 0 25%;
     .img-container {
       display: inline-block;
       width: 45%;
       position: relative;
       height: 100%;
-      background: red;
       .user-img {
         position: absolute;
         top: 56px;
@@ -52,9 +50,32 @@
       }
     }
     .profile-section {
-      position: absolute;
+      //position: absolute;
       vertical-align: top;
       display: inline-block;
+      max-width: 400px;
+      padding: 15% 0 0 0;
+      .profile {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0 0 1rem;
+          span {
+            color: $colour1;
+          }
+        }
+        h5 {
+          font-size: 1.1rem;
+          margin: 0 0 2rem;
+        }
+        p {
+          color: $colour4;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem;
+        }
+      }
     }
   }
 }
