@@ -126,11 +126,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.home .info-section {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 54px; }
+  .home .info-section .logo {
+    background: #fefefe;
+    height: 100px;
+    width: 200px; }
+  .home .info-section .info-box {
+    position: absolute;
+    bottom: 60px;
+    color: #fefefe; }
+    .home .info-section .info-box h4 {
+      font-size: 1.2rem;
+      margin: 0.7rem 0; }
+    .home .info-section .info-box p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0.2rem 0 1.6rem; }
+
 .home .content-area {
-  background: #fefefe; }
+  margin-left: 35%;
+  width: 65%;
+  background: #fefefe;
+  height: 100%; }
+  .home .content-area .img-container {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    height: 100%;
+    background: red; }
+    .home .content-area .img-container .user-img {
+      position: absolute;
+      top: 56px;
+      left: -150px;
+      width: 100%;
+      height: calc(100% - 112px);
+      background: url("profile.8400309b.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+  .home .content-area .profile-section {
+    position: absolute;
+    vertical-align: top;
+    display: inline-block; }
 
+/* Always do this */
+/* Stops Sizes Going Over Specs */
+* {
+  box-sizing: border-box; }
+
+html,
 body {
-  background: #4b21ff; }
-
-fab {
-  color: #272727; }
+  background: #4b21ff;
+  font-size: 18px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  height: 100%; }

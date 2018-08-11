@@ -2,10 +2,16 @@
 @import "_variables";
 @import "_home";
 
-body {
-  background: $colour1;
+/* Always do this */
+/* Stops Sizes Going Over Specs */
+* {
+  box-sizing: border-box;
 }
 
-fab {
-  color: $colour2;
+html,
+body {
+  background: $colour1;
+  font-size: 18px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  height: 100%;
 }

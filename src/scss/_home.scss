@@ -1,5 +1,60 @@
 .home {
+  .info-section {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 54px;
+    .logo {
+      background: $colour3;
+      height: 100px;
+      width: 200px;
+    }
+    .info-box {
+      position: absolute;
+      bottom: 60px;
+      color: $colour3;
+      h4 {
+        font-size: 1.2rem;
+        margin: 0.7rem 0;
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        margin: 0.2rem 0 1.6rem;
+      }
+    }
+  }
   .content-area {
+    margin-left: 35%;
+    width: 65%;
     background: $colour3;
+    height: 100%;
+    //padding: 0 0 0 25%;
+    .img-container {
+      display: inline-block;
+      width: 45%;
+      position: relative;
+      height: 100%;
+      background: red;
+      .user-img {
+        position: absolute;
+        top: 56px;
+        left: -150px;
+        width: 100%;
+        height: calc(100% - 112px);
+        background: url("../images/profile.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    }
+    .profile-section {
+      position: absolute;
+      vertical-align: top;
+      display: inline-block;
+    }
   }
 }
