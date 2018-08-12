@@ -37,6 +37,9 @@
         text-decoration: none;
         font-size: 1.1rem;
         padding: 0 10px;
+        &:hover {
+          color: #f8ff21;
+        }
         &:first-child {
           padding: 0 10px 0 0;
         }
@@ -64,6 +67,9 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        -webkit-box-shadow: 7px 18px 74px 5px rgba(51, 32, 51, 0.34);
+        -moz-box-shadow: 7px 18px 74px 5px rgba(51, 32, 51, 0.34);
+        box-shadow: 7px 18px 74px 5px rgba(51, 32, 51, 0.34);
       }
     }
     .profile-section {
