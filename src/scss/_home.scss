@@ -7,6 +7,7 @@
     left: 0;
     padding: 54px;
     .logo {
+      text-transform: uppercase;
       border: 5px solid $colour3;
       height: 130px;
       width: 150px;
@@ -38,7 +39,7 @@
         font-size: 1.1rem;
         padding: 0 10px;
         &:hover {
-          color: #f8ff21;
+          color: $hoverColour;
         }
         &:first-child {
           padding: 0 10px 0 0;
@@ -73,11 +74,11 @@
       }
     }
     .profile-section {
-      //position: absolute;
+      position: absolute;
       vertical-align: top;
       display: inline-block;
       max-width: 400px;
-      padding: 15% 0 0 0;
+      padding: 5% 0 0 0;
       .profile {
         h1 {
           font-size: 2.3rem;
@@ -100,5 +101,74 @@
         }
       }
     }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: red;
+  }
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 60%;
+        padding: 15% 20px 0;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: blue;
+  }
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 60%;
+        padding: 10% 20px 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background: green;
+  }
+  .home {
+    .content-area {
+      .profile-section {
+        width: 60%;
+        padding: 10% 20px 0;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body {
+    background: black;
   }
 }
