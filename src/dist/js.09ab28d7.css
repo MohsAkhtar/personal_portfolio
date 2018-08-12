@@ -211,9 +211,33 @@ table {
       line-height: 1.4;
       margin: 0 0 2rem; }
 
+@media (max-width: 575.98px) {
+  .home .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: #fff; }
+    .home .menu-icon .fas {
+      color: #fff; }
+  .home .info-section {
+    padding: 0;
+    position: static; }
+  .home .info-box {
+    display: none; }
+  .home .content-area {
+    margin-left: 0;
+    width: 100%;
+    padding: 20% 10px 0; }
+    .home .content-area .img-container {
+      padding: 56px 20px 0; }
+      .home .content-area .img-container .user-img {
+        position: static;
+        width: 100%; }
+    .home .content-area .profile-section {
+      width: 55%; }
+    .home .content-area .btn {
+      padding: 10px 0; } }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-  body {
-    background: red; }
   .home .content-area .img-container {
     padding: 56px 20px 0; }
     .home .content-area .img-container .user-img {
@@ -224,8 +248,6 @@ table {
     padding: 15% 20px 0; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body {
-    background: blue; }
   .home .content-area .img-container {
     padding: 56px 20px 0; }
     .home .content-area .img-container .user-img {
@@ -236,15 +258,9 @@ table {
     padding: 10% 20px 0; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  body {
-    background: green; }
   .home .content-area .profile-section {
     width: 60%;
     padding: 10% 20px 0; } }
-
-@media (min-width: 1200px) {
-  body {
-    background: black; } }
 
 /* Always do this */
 /* Stops Sizes Going Over Specs */
@@ -253,6 +269,7 @@ table {
 
 html,
 body {
+  background: #4b21ff;
   font-size: 18px;
   font-family: "Barlow Semi Condensed", sans-serif;
   height: 100%; }

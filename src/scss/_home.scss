@@ -105,13 +105,48 @@
 }
 
 // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .home {
+    .menu-icon {
+      top: -3px;
+      right: 20px;
+      color: #fff;
+      .fas {
+        color: #fff;
+      }
+    }
+    .info-section {
+      padding: 0;
+      position: static;
+    }
+    .info-box {
+      display: none;
+    }
+    .content-area {
+      margin-left: 0;
+      width: 100%;
+      padding: 20% 10px 0;
+      .img-container {
+        padding: 56px 20px 0;
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 55%;
+      }
+
+      .btn {
+        padding: 10px 0;
+      }
+    }
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-  body {
-    background: red;
-  }
   .home {
     .content-area {
       .img-container {
@@ -131,9 +166,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body {
-    background: blue;
-  }
   .home {
     .content-area {
       .img-container {
@@ -153,9 +185,6 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  body {
-    background: green;
-  }
   .home {
     .content-area {
       .profile-section {
@@ -168,7 +197,4 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  body {
-    background: black;
-  }
 }
