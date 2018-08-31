@@ -2,7 +2,7 @@
   "name": "personal_portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "dist/index.html",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "watch": "parcel src/index.html",
